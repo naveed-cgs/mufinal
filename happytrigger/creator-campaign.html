@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Trigger Happy - Creator Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="css/skins/flat/purple.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="css/picker/classic.css" rel="stylesheet" />
+    <link href="css/picker/classic.date.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/happytrigger/logo.png" class="mh-25" alt="" title="" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">RECOMMENDED</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MY PROGRAMS</a>
+                    </li>
+                </ul>
+                <ul class="header-cta my-2 my-lg-0 dropdown show">
+                    <li class="ml-2 mr-2 pt-2 hidden-sm-down search-box"> <a class="hidden-sm-down text-muted color-white"
+                            href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                        <form class="app-search">
+                            <input type="text" class="form-control" placeholder="Search here"> <a class="srh-btn"><i
+                                    class="fa fa-close"></i></a> </form>
+                    </li>
+
+                    <li class="ml-2 mr-2 pt-2 dropdown">
+                        <a class="dropdown-toggle color-white text-muted text-muted  " href="#" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i>
+                            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
+                            <ul class="default-ul">
+                                <li>
+                                    <div class="drop-title">Notifications</div>
+                                </li>
+                                <li>
+                                    <div class="message-center">
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-danger btn-circle m-r-10"><i class="fa fa-link"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is title</h5> <span class="mail-desc">Just see the my new
+                                                    admin!</span> <span class="time">9:30 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-success btn-circle m-r-10"><i class="ti-calendar"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is another title</h5> <span class="mail-desc">Just a reminder
+                                                    that you have event</span> <span class="time">9:10 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-info btn-circle m-r-10"><i class="ti-settings"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is title</h5> <span class="mail-desc">You can customize this
+                                                    template as you want</span> <span class="time">9:08 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-primary btn-circle m-r-10"><i class="ti-user"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is another title</h5> <span class="mail-desc">Just see the my
+                                                    admin!</span> <span class="time">9:02 AM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all
+                                            notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="ml-2 mr-2 pt-2 dropdown">
+                        <a class="dropdown-toggle text-muted color-white" href="#" id="2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> <i class="fa fa-envelope"></i>
+                            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn" aria-labelledby="2">
+                            <ul class="default-ul">
+                                <li>
+                                    <div class="drop-title">You have 4 new messages</div>
+                                </li>
+                                <li>
+                                    <div class="message-center">
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/5.jpg" alt="user"
+                                                    class="img-circle"> <span class="profile-status online pull-right"></span>
+                                            </div>
+                                            <div class="mail-contnet">
+                                                <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span>
+                                                <span class="time">9:30 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/2.jpg" alt="user"
+                                                    class="img-circle"> <span class="profile-status busy pull-right"></span>
+                                            </div>
+                                            <div class="mail-contnet">
+                                                <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span>
+                                                <span class="time">9:10 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/3.jpg" alt="user"
+                                                    class="img-circle"> <span class="profile-status away pull-right"></span>
+                                            </div>
+                                            <div class="mail-contnet">
+                                                <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span
+                                                    class="time">9:08 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/4.jpg" alt="user"
+                                                    class="img-circle"> <span class="profile-status offline pull-right"></span>
+                                            </div>
+                                            <div class="mail-contnet">
+                                                <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span>
+                                                <span class="time">9:02 AM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong>
+                                        <i class="fa fa-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li class="ml-2 mr-2 pt-2 dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="color-white"><i class="fa fa-bell"></i></a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="ml-2 mr-2 pt-2 dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="color-white"><i class="fa fa-envelope"></i></a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li> -->
+
+                    <li class="ml-2 mr-2 pt-1 mb-pull-right "><img class="img-responsive rounded-circle" width="25"
+                            height="25" src="img/happytrigger/user-icon.png" alt="" title="" /></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="header-bottom py-5">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-sm-12">
+                    <h4 class="color-white pb-3">Creator Dashboard</h4>
+                    <p class="color-white">As a campaign creator, you can view the list of campaigns that are in live,
+                        ready to go live,
+                        <br /> under review, rejected and past campaigns from here.</p>
+                </div>
+            </div>
+            <!-- <div class="row mt-3 pb-3">
+                <div class="col-sm-12 col-md-4">
+                    <div class="progress" style="height:5px">
+                        <div class="progress-bar" style="width:40%;height:10px"></div>
+                    </div>
+                    <p class="color-white"><small>60% Completed</small></p>
+                </div>
+                <div class="col-sm-12 col-md-8 text-right">
+                    <ul class="default-ul pull-right status-ul color-white li-iblock">
+                        <li class="pending text-uppercase">Pending</li>
+                        <li class="completed text-uppercase">Completed</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="settings-area">
+        <div class="container">
+            <div class="settings-area">
+                <ul class="nav nav-pills nav-fill mb-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tab1">Live Campaigns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab2">Ready to Live Campaigns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab3">Campaigns Under Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab4">Rejected Campaigns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab5">Past Campaigns</a>
+                    </li>
+                </ul>
+                <div class="row px-4 py-2">
+                    <div class="col text-center text-md-right px-3 my-3">
+                        <button class="text-capitalize createBtn btn py-2 px-0 pl-5 waves-effect waves-light m-0 themeColorBg boxShadowNone buttonBorder rounded  proxiSemibold pr-3 text-center">Create
+                            New Program</button>
+                    </div>
+                </div>
+                <!-- Tab panes -->
+                <div class="tab-content mb-form-fields datatable-design pb-2 tblTop-40">
+                    <div class="tab-pane active container px-0" id="tab1">
+                        <!-- <h2 class="heading-color">15 Campaigns Currently in live</h2> -->
+                        <label class="fs-18 fw-600 px-4 mb-0">15 Campaigns Currently in live</label>
+                        <div class="table-responsive-mobile">
+                            <table id="dtBasicExample" class="table" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="th-sm">Campaign ID
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Type
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Name
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Targeted Segment
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Segment Description
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Period
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm w-105px">Eligible Customers
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k
+                                            <button class="btn btn-success text-uppercase btn-curve mb-4 btn-sm waves-effect waves-light fs-8">Drill
+                                                Down</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k
+                                            <button class="btn btn-success text-uppercase btn-curve mb-4 btn-sm waves-effect waves-light fs-8">Drill
+                                                Down</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k
+                                            <button class="btn btn-success text-uppercase btn-curve mb-4 btn-sm waves-effect waves-light fs-8">Drill
+                                                Down</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane container px-0" id="tab2">
+                        Ready to Live Campaigns
+                    </div>
+                    <div class="tab-pane container px-0" id="tab3">Campaigns Under Review</div>
+                    <div class="tab-pane container px-0" id="tab4">
+                        <!-- <h2 class="heading-color">15 Campaigns rejected</h2> -->
+                        <label class="fs-18 fw-600 px-4 mb-0">5 Campaigns rejected</label>
+                        <div class="table-responsive-mobile">
+                            <table id="dtrejectedcampaings" class="table rejectionTable fiveCampaigns" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="th-sm">Campaign ID
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Type
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Name
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Targeted Segment
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Segment Description
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Period
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm w-105px">Eligible Customers
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Rejection Comment
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="details-control">00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys.<a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                        <td>Lorem Ipsum has been the industrys. <a class="d-inline-block font-weight-bold readMoreLink show-rejection-comment">Read
+                                                More...</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane container px-0" id="tab5">
+                        <!-- <h2 class="heading-color">15 Campaigns in selected period</h2> -->
+                        <label class="fs-18 fw-600 px-4 mb-0">15 Campaigns</label>
+                        <div class="table-responsive-mobile">
+                            <table id="dtpastcampaings" class="table" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="th-sm">Campaign ID
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Type
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Name
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Targeted Segment
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Segment Description
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm">Campaign Period
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                        <th class="th-sm w-105px">Eligible Customers
+                                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k
+                                            <button class="btn btn-success text-uppercase btn-curve mb-4 btn-sm waves-effect waves-light fs-8 open-reportpopup">View
+                                                Report</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k
+                                            <button class="btn btn-success text-uppercase btn-curve mb-4 btn-sm waves-effect waves-light fs-8 open-reportpopup">View
+                                                Report</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k
+                                            <button class="btn btn-success text-uppercase btn-curve mb-4 btn-sm waves-effect waves-light fs-8 open-reportpopup">View
+                                                Report</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00001</td>
+                                        <td>Engagement</td>
+                                        <td>Actication of current Account Dormant customers</td>
+                                        <td>CA_Inactive_User</td>
+                                        <td>Customer who have been inactive for the last 60 days and more (but less
+                                            than 180 days)</td>
+                                        <td>12 Jul 2018 To 11 Aug 2018 </td>
+                                        <td>120.5k</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/icheck.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+
+    <script>
+        jQuery(document).ready(function () {
+
+            // Modal
+            $("input.open-input-modal").click(function () {
+                $("#centralModallg").modal('show');
+            });
+
+            // Slimscroll
+            $('.message-center').slimScroll({
+                position: "right",
+                size: "5px",
+                color: "#dcdcdc"
+            });
+
+            // Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Search implementation
+            $(".search-box a, .search-box .app-search .srh-btn").on("click", function () {
+                $(".app-search").slideToggle(200);
+            });
+
+            // icheck
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_flat-purple',
+                radioClass: 'iradio_flat-purple'
+            });
+
+            // Datatable init
+            $('#dtBasicExample').DataTable({
+                "dom": 'f<t><"td-footer"ilp>'
+            });
+            $('#dtpastcampaings').DataTable({
+                "dom": 'f<t><"td-footer"ilp>'
+            });
+            $('#dtrejectedcampaings').DataTable({
+                "dom": 'f<t><"td-footer"ilp>'
+            });
+            $('.dataTables_length').addClass('bs-select');
+
+            var table = $('#dtrejectedcampaings').DataTable();
+
+            // Collapse
+            // $('#dtrejectedcampaings tbody').on('click', 'td', function () {
+            //       var tr = $(this).closest('tr');
+            //       var row = table.row( tr );
+
+            //       if ( row.child.isShown() ) {
+            //           row.child.hide();
+            //           tr.removeClass('shown');
+            //       }
+            //       else {
+            //           row.child( format() ).show();
+            //           tr.addClass('shown');
+            //       }
+            //   } );
+
+            //open popup
+            $('.open-reportpopup').click(function () {
+                $("#viewReport").modal('show');
+            });
+
+            $('.show-rejection-comment').click(function () {
+                $("#show-rejection-comment").modal('show');
+            });
+
+            // Date picker
+            $('.datepicker').pickadate();
+
+        });
+
+        // 		function format ( ) {
+        //     return '<table cellpadding="5" width="100%" cellspacing="0" border="0" style="padding-left:50px;">'+
+        //         '<tr>'+
+        //             '<td>Rejection Comment:</td>'+
+        //         '</tr>'+
+        //         '<tr>'+
+        //             '<td>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</td>'+
+        //         '</tr>'+
+        //     '</table>';
+        // }
+    </script>
+
+    <!-- Central Modal Small -->
+    <div class="modal fade" id="centralModallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <!-- Change class .modal-sm to change the size of the modal -->
+
+            <div class="modal-content multi-select-modal">
+                <div class="modal-header py-3 px-4">
+                    <h4 class="modal-title w-100" id="myModalLabel">Products to be displayed</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-checkbox input-selected">
+                                <input type="checkbox">
+                                <label>Default checkbox 1</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-checkbox">
+                                <input type="checkbox">
+                                <label>Default checkbox 2</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-checkbox">
+                                <input type="checkbox">
+                                <label>Default checkbox 3</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio">
+                                <input type="radio" name="default">
+                                <label>Default Radio 1</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio">
+                                <input type="radio" name="default">
+                                <label>Default Radio 2</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio input-selected">
+                                <input type="radio" name="default">
+                                <label>Default Radio 3</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio">
+                                <input type="radio" name="default">
+                                <label>Default Radio 4</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-3 px-4">
+                    <button type="button" class="btn btn-success btn-mb-success pl-5 pr-5 text-capitalize">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Central Modal Small -->
+
+
+
+    <div class="modal fade" id="show-rejection-comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <!-- Change class .modal-sm to change the size of the modal -->
+
+            <div class="modal-content multi-select-modal">
+                <div class="modal-header py-3 px-4">
+                    <h4 class="modal-title w-100" id="myModalLabel">Rejection Comment</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look like
+                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes
+                        on purpose (injected humour and the like).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Central Modal Small -->
+
+
+    <div class="modal fade" id="viewReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-xl" role="document">
+            <!-- Change class .modal-sm to change the size of the modal -->
+
+            <div class="modal-content multi-select-modal">
+                <div class="modal-header py-3 px-4">
+                    <h4 class="modal-title w-100" id="myModalLabel">Campaign Report Summary</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row campaignSummary">
+                        <div class="col-md-4">
+                            <p>
+                                <label class="w-100 mb-0">Campaign ID</label> <span>00003</span></p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                <label class="w-100 mb-0">Campaign Type</label> <span>Transition</span></p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                <label class="w-100 mb-0">Campaign Name</label> <span>Activation of current account
+                                    Dormant Customers</span></p>
+                        </div>
+                    </div>
+                    <div class="row campaignSummary">
+                        <div class="col-md-4">
+                            <p>
+                                <label class="w-100 mb-0">Target Segment</label> <span>CA_Unusual_Large_Depositar</span></p>
+                        </div>
+                        <div class="col-md-4 offset-md-4">
+                            <p>
+                                <label class="w-100 mb-0">Campaign Period</label> <span>12 July 2018 To 11 Aug 2018</span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-pills nav-fill mb-tabs curve-md-tabs campaignSummaryTabs d-flex flex-column flex-lg-row">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab11">Overall Response Trend</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab22">Channel wise Response</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab33">Response
+                                        Breakdown</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mb-form-fields pt-5 datatable-design">
+                                <div class="tab-pane container px-0" id="tab11">
+                                    <div class="row text-center">
+                                        <div class="col-md-6">
+                                            <p>Number of customers Contacted: 20.5K</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Number of customers Responded: 11.5K</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 img-center">
+                                            <!-- <p><img src="img/happytrigger/graph.png" class="img-fluid" alt="" title="" /></p> -->
+
+
+                                            <canvas id="myChart"></canvas>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container active px-0" id="tab22">
+                                    <div class="row mb-5 pb-4">
+                                        <div class="col-lg-4">
+                                            <div class="piechartContent mb-2 text-center">
+                                                <p>EMAIL</p>
+                                                <p>Number of customers Contacted: 8k</p>
+                                                <p>Number of customers Responded: 10k</p>
+                                            </div>
+                                            <div class="px-4">
+                                            <canvas id="emailDoughnut" class="mb-3"></canvas>
+                                            </div>
+                                            <h3 class="text-center mb-0">55%</h3>
+                                            <span class="d-inline-block w-100 text-center responserate">Response Rate</span>
+                                            
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="piechartContent mb-2 text-center">
+                                                <p>SMS</p>
+                                                <p>Number of customers Contacted: 8k</p>
+                                                <p>Number of customers Responded: 10k</p>
+                                            
+                                            </div>
+                                            <div class="px-4">
+                                                <canvas id="myDoughnut" class="mb-3"></canvas>
+                                            </div>
+                                            <h3 class="text-center mb-0">85%</h3>
+                                            <span class="d-inline-block w-100 text-center responserate">Response Rate</span>
+                                            
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="piechartContent mb-2 text-center">
+                                                <p>PUSH NOTIFICATION</p>
+                                                <p>Number of customers Contacted: 8k</p>
+                                                <p>Number of customers Responded: 10k</p>
+                                            </div>
+                                            <div class="px-4">
+                                                <canvas id="pushDoughnut" class="mb-3"></canvas>
+                                            </div>
+                                            <h3 class="text-center mb-0">58%</h3>
+                                            <span class="d-inline-block w-100 text-center responserate">Response Rate</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                                <div class="piechartContent mb-2 text-center">
+                                                        <p>CALL CENTER</p>
+                                                        <p>Number of customers Contacted: 5K</p>
+                                                        <p>Number of customers Responded: 10K</p>
+                                                    </div>
+                                            <div class="px-4">
+                                            <canvas id="callCenterDoughnut" class="mb-3"></canvas>
+                                            </div>
+                                            <h3 class="text-center mb-0">55%</h3>
+                                            <span class="d-inline-block w-100 text-center responserate">Response Rate</span>
+                                            
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="piechartContent mb-2 text-center">
+                                                        <p>ONLINE BANKING</p>
+                                                        <p>Number of customers Contacted: 5K</p>
+                                                        <p>Number of customers Responded: 10K</p>
+                                                    </div>
+                                            <div class="px-4">
+                                                <canvas id="onlineBankingDoughnut" class="mb-3"></canvas>
+                                            </div>
+                                            <h3 class="text-center mb-0">85%</h3>
+                                            <span class="d-inline-block w-100 text-center responserate">Response Rate</span>
+                                            
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="piechartContent mb-2 text-center">
+                                                        <p>MOBILE BANKING</p>
+                                                        <p>Number of customers Contacted: 5K</p>
+                                                        <p>Number of customers Responded: 10k</p>
+                                                    </div>
+                                            <div class="px-4">
+                                                <canvas id="mobileBankingDoughnut" class="mb-3"></canvas>
+                                            </div>
+                                            <h3 class="text-center mb-0">58%</h3>
+                                            <span class="d-inline-block w-100 text-center responserate">Response Rate</span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container px-0" id="tab33">
+                                    <div class="funnelGraph pushNotification mb-3">
+                                        <div id="maintwo" class="mainFunnelGraph"></div>
+                                    </div>
+                                    <!-- <div id="chart"></div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Central Modal Small -->
+    <script src="js/funnel.graph.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            funnelPanel();
+            chatGraph();
+
+            myDoughnut();
+        });
+
+
+
+        function funnelPanel() {
+            var myCharttwo = echarts.init(document.getElementById('maintwo'));
+            var optiontwo = {
+                title: {
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c}%"
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        // mark : {show: true},
+                        // dataView : {show: true, readOnly: false},
+                        // restore : {show: true},
+                        // saveAsImage : {show: true}
+                    }
+                },
+                legend: {
+                    data: ['Delivered', 'Opened', 'Clicked Links', 'Fulfilled Action']
+                },
+                calculable: true,
+                series: [
+                    {
+                        name: 'Funnel Plot',
+                        type: 'funnel',
+                        x: '10%',
+                        y: 60,
+                        x2: 20,
+                        y2: 10,
+                        width: '80%',
+                        // height: {totalHeight} - y - y2,
+                        min: 0,
+                        max: 100,
+                        minSize: '0%',
+                        maxSize: '100%',
+                        sort: 'descending', // 'ascending', 'descending'
+                        gap: 10,
+                        itemStyle: {
+                            normal: {
+                                borderColor: '#fff',
+                                borderWidth: 1,
+                                label: {
+                                    show: true,
+                                    position: 'right',
+                                    fontSize: '15px',
+                                    textStyle: null,
+                                },
+                                labelLine: {
+                                    show: false,
+                                    length: 10,
+                                    lineStyle: {
+                                        width: 1,
+                                        type: 'solid'
+                                    }
+                                }
+                            },
+                            emphasis: {
+                                borderColor: '#6f57ac',
+                                borderWidth: 5,
+                                label: {
+                                    show: true,
+                                    //formatter: '{b}:{c}%',
+
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+                        data: [
+                            { value: 20, name: 'Delivered' },
+                            { value: 60, name: 'Clicked Links' },
+                            { value: 40, name: 'Opened' },
+                            { value: 80, name: 'Fulfilled Action' },
+                        ]
+                    }
+                ]
+            };
+            myCharttwo.setOption(optiontwo);
+
+
+        }
+
+        // function chatGraph() {
+        //     var ctx = document.getElementById("myChart");
+        //     var myChart = new Chart(ctx, {
+        //         type: 'line',
+        //         data: {
+        //             labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        //             datasets: [{
+        //                 label: '# of Votes',
+        //                 data: [12, 19, 3, 5, 2, 3],
+        //                 backgroundColor: [
+        //                     'rgba(255, 99, 132, 0.2)',
+        //                     'rgba(54, 162, 235, 0.2)',
+        //                     'rgba(255, 206, 86, 0.2)',
+        //                     'rgba(75, 192, 192, 0.2)',
+        //                     'rgba(153, 102, 255, 0.2)',
+        //                     'rgba(255, 159, 64, 0.2)'
+        //                 ],
+        //                 borderColor: [
+        //                     'rgba(255,99,132,1)',
+        //                     'rgba(54, 162, 235, 1)',
+        //                     'rgba(255, 206, 86, 1)',
+        //                     'rgba(75, 192, 192, 1)',
+        //                     'rgba(153, 102, 255, 1)',
+        //                     'rgba(255, 159, 64, 1)'
+        //                 ],
+        //                 borderWidth: 1
+        //             }]
+        //         },
+        //         options: {
+        //             scales: {
+        //                 yAxes: [{
+        //                     ticks: {
+        //                         beginAtZero: true
+        //                     }
+        //                 }]
+        //             }
+        //         }
+        //     });
+        // }
+
+
+        function chatGraph() {
+
+            var speedCanvas = document.getElementById("myChart");
+            var dataFirst = {
+                label: "EMAIL",
+                data: ['1', '2', '4', '7', '8', '10', '3', '12', '16', '18', '21', '10', '14', '15', '20', '10', '15', '20', '15', '16', '20', '22', '24', '25', '20', '10', '13', '16', '20', '25', '30',],
+                lineTension: 0.3,
+                fill: false,
+                borderColor: 'rgba(0, 63, 92, 1)',
+                backgroundColor: 'rgba(0, 63, 92)',
+                pointBorderColor: 'rgba(0, 63, 92)',
+                pointBackgroundColor: 'rgba(0, 63, 92)',
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                pointHitRadius: 30,
+                pointBorderWidth: 2,
+            };
+
+            var dataSecond = {
+                label: "SMS",
+                data: ['20', '8', '5', '12', '16', '6', '7', '9', '11', '14', '16', '18', '15', '10', '22', '24', '27', '20', '16', '17', '16', '21', '23', '26', '27', '22', '20', '21', '24', '26', '20',],
+                lineTension: 0.3,
+                fill: false,
+                borderColor: 'rgba(68, 78, 134, 1)',
+                backgroundColor: 'rgba(68, 78, 134)',
+                pointBorderColor: 'rgba(68, 78, 134)',
+                pointBackgroundColor: 'rgba(68, 78, 134)',
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                pointHitRadius: 30,
+                pointBorderWidth: 2
+            };
+
+            var dataThird = {
+                label: "PUSH NOTIFICATION",
+                data: ['11', '22', '25', '26', '30', '20', '21', '24', '25', '26', '27', '30', '10', '15', '11', '13', '14', '15', '16', '18', '20', '22', '24', '26', '28', '30', '25', '22', '18', '14', '10',],
+                lineTension: 0.3,
+                fill: false,
+                borderColor: 'rgba(149, 81, 150, 1)',
+                backgroundColor: 'rgba(149, 81, 150)',
+                pointBorderColor: 'rgba(149, 81, 150, 1)',
+                pointBackgroundColor: 'rgba(149, 81, 150)',
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                pointHitRadius: 30,
+                pointBorderWidth: 2
+            };
+
+            var dataFour = {
+                label: "CALL CENTER",
+                data: ['1', '2', '3', '4', '5', '10', '7', '11', '12', '13', '14', '11', '16', '15', '19', '21', '19', '10', '11', '17', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '31',],
+                lineTension: 0.3,
+                fill: false,
+                borderColor: 'rgba(221, 81, 130)',
+                backgroundColor: 'rgba(221, 81, 130)',
+                pointBorderColor: 'rgba(221, 81, 130)',
+                pointBackgroundColor: 'rgba(221, 81, 130)',
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                pointHitRadius: 30,
+                pointBorderWidth: 2
+            };
+
+            var dataFive = {
+                label: "ONLINE BANKING",
+                data: ['3', '5', '7', '9', '14', '10', '11', '13', '14', '5', '2', '5', '7', '15', '8', '11', '12', '16', '17', '18', '20', '22', '23', '24', '25', '26', '28', '29', '25', '23', '20',],
+                lineTension: 0.3,
+                fill: false,
+                borderColor: 'rgba(255, 110, 84, 1)',
+                backgroundColor: 'rgba(255, 110, 84)',
+                pointBorderColor: 'rgba(255, 110, 84, 1)',
+                pointBackgroundColor: 'rgba(255, 110, 84)',
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                pointHitRadius: 30,
+                pointBorderWidth: 2
+            };
+
+            var dataSix = {
+                label: "MOBILE BANKING",
+                data: ['1', '5', '10', '15', '20', '10', '25', '30', '10', '3', '6', '9', '12', '15', '18', '21', '24', '27', '20', '25', '20', '22', '24', '26', '28', '30', '25', '20', '18', '15', '10',],
+                lineTension: 0.3,
+                fill: false,
+                borderColor: 'rgba(255, 166, 0, 1)',
+                backgroundColor: 'rgba(255, 166, 0)',
+                pointBorderColor: 'rgba(255, 166, 0, 1)',
+                pointBackgroundColor: 'rgba(255, 166, 0)',
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                pointHitRadius: 30,
+                pointBorderWidth: 2
+            };
+
+            var speedData = {
+                labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"],
+                datasets: [dataFirst, dataSecond, dataThird, dataFour, dataFive, dataSix]
+            };
+
+            var chartOptions = {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        padding: 20,
+                        boxWidth: 12,
+                    },
+                },
+
+
+            };
+
+            var lineChart = new Chart(speedCanvas, {
+                type: 'line',
+                data: speedData,
+                options: chartOptions
+            });
+
+
+
+
+
+        }
+
+
+
+
+        function myDoughnut() {
+
+            var ctx = document.getElementById('myDoughnut').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Non-Responders", "Delivered", "Opened", "Clicked", "Applied"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: ['rgba(0, 63, 92, 1)', 'rgba(68, 78, 134, 1)', 'rgba(149, 81, 150, 1)', 'rgba(221, 81, 130)', 'rgba(255, 110, 84, 1)'],
+                        borderColor: 'rgb(255,255,255)',
+                        data: [8, 10, 5, 2, 20],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display:false,
+                    }
+                }
+            });
+
+
+            var emailctx = document.getElementById('emailDoughnut').getContext('2d');
+            var charts = new Chart(emailctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Non-Responders", "Delivered", "Opened", "Clicked", "Applied"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: ['rgba(0, 63, 92, 1)', 'rgba(68, 78, 134, 1)', 'rgba(149, 81, 150, 1)', 'rgba(221, 81, 130)', 'rgba(255, 110, 84, 1)'],
+                        borderColor: 'rgb(255,255,255)',
+                        data: [8, 10, 5, 2, 20],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display:false,
+                    }
+                }
+            });
+
+            var pushctx = document.getElementById('pushDoughnut').getContext('2d');
+            var pushchart = new Chart(pushctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Non-Responders", "Delivered", "Opened", "Clicked", "Applied"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: ['rgba(0, 63, 92, 1)', 'rgba(68, 78, 134, 1)', 'rgba(149, 81, 150, 1)', 'rgba(221, 81, 130)', 'rgba(255, 110, 84, 1)'],
+                        borderColor: 'rgb(255,255,255)',
+                        data: [8, 10, 5, 2, 20],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display:false,
+                    }
+                }
+            });
+
+            var callCenterctx = document.getElementById('callCenterDoughnut').getContext('2d');
+            var callchart = new Chart(callCenterctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Non-Responders", "Answered", "Accepted", "Rejected", "Undecided", "Deferred"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: ['rgba(0, 63, 92, 1)', 'rgba(68, 78, 134, 1)', 'rgba(149, 81, 150, 1)', 'rgba(221, 81, 130)', 'rgba(255, 110, 84, 1)', 'rgba(255, 166, 0, 1)'],
+                        borderColor: 'rgb(255,255,255)',
+                        data: [5, 10, 5, 2, 20, 30],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display:false,
+                        labels: {
+                            boxWidth: 20,
+                            //boxHeight: 4
+                        }
+                    }
+                }
+            });
+
+            var onlineBankctx = document.getElementById('onlineBankingDoughnut').getContext('2d');
+            var bankchart = new Chart(onlineBankctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Delivered", "Clicked", "Applied"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: ['rgba(0, 63, 92, 1)', 'rgba(68, 78, 134, 1)', 'rgba(149, 81, 150, 1)'],
+                        borderColor: 'rgb(255,255,255)',
+                        data: ['5', '10', '5'],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display:false,
+                        labels: {
+                            boxWidth: 60,
+                        }
+                    }
+                }
+            });
+
+            var mobilebankctx = document.getElementById('mobileBankingDoughnut').getContext('2d');
+            var mobilebankchart = new Chart(mobilebankctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Delivered", "Clicked", "Applied"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: ['rgba(149, 81, 150, 1)', 'rgba(221, 81, 130)', 'rgba(255, 110, 84, 1)'],
+                        borderColor: 'rgb(255,255,255)',
+                        data: [5, 10, 5],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display:false,
+                        labels: {
+                            boxWidth: 60,
+                        }
+                    }
+                }
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

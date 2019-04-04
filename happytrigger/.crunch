@@ -1,0 +1,34 @@
+{
+	"files": {
+		"styles.scss": {
+			"engines": [
+				{
+					"compiler": "scss",
+					"output": "styles.css",
+					"options": {
+						"style": 0,
+						"comments": false
+					}
+				}
+			],
+			"sources": [
+				"styles.scss"
+			]
+		},
+		"campaign.scss": {
+			"engines": [
+				{
+					"compiler": "scss",
+					"output": "css/campaign.css",
+					"options": {
+						"style": 0,
+						"comments": false
+					}
+				}
+			],
+			"sources": [
+				"campaign.scss"
+			]
+		}
+	}
+}

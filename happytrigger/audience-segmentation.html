@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Trigger Happy - Audience Segmentation</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="css/skins/flat/purple.css" rel="stylesheet" />
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/happytrigger/logo.png" class="mh-25" alt="" title="" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">RECOMMENDED</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MY PROGRAMS</a>
+                    </li>
+                </ul>
+                <ul class="header-cta my-2 my-lg-0 dropdown show">
+                    <li class="ml-2 mr-2 pt-2 hidden-sm-down search-box"> <a class="hidden-sm-down text-muted color-white" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                        <form class="app-search">
+                            <input type="text" class="form-control" placeholder="Search here"> <a class="srh-btn"><i class="fa fa-close"></i></a> </form>
+                    </li>
+
+                    <li class="ml-2 mr-2 pt-2 dropdown">
+                        <a class="dropdown-toggle color-white text-muted text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i>
+                            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
+                            <ul class="default-ul">
+                                <li>
+                                    <div class="drop-title">Notifications</div>
+                                </li>
+                                <li>
+                                    <div class="message-center">
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-danger btn-circle m-r-10"><i class="fa fa-link"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is title</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-success btn-circle m-r-10"><i class="ti-calendar"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is another title</h5> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-info btn-circle m-r-10"><i class="ti-settings"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is title</h5> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="btn btn-primary btn-circle m-r-10"><i class="ti-user"></i></div>
+                                            <div class="mail-contnet">
+                                                <h5>This is another title</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="ml-2 mr-2 pt-2 dropdown">
+                        <a class="dropdown-toggle text-muted color-white" href="#" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-envelope"></i>
+                            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn" aria-labelledby="2">
+                            <ul class="default-ul">
+                                <li>
+                                    <div class="drop-title">You have 4 new messages</div>
+                                </li>
+                                <li>
+                                    <div class="message-center">
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                            <div class="mail-contnet">
+                                                <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                            <div class="mail-contnet">
+                                                <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                            <div class="mail-contnet">
+                                                <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="#">
+                                            <div class="user-img"> <img src="img/happytrigger/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                            <div class="mail-contnet">
+                                                <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li class="ml-2 mr-2 pt-2 dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="color-white"><i class="fa fa-bell"></i></a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="ml-2 mr-2 pt-2 dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="color-white"><i class="fa fa-envelope"></i></a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li> -->
+
+                    <li class="ml-2 mr-2 pt-1 mb-pull-right "><img class="img-responsive rounded-circle" width="25" height="25" src="img/happytrigger/user-icon.png" alt="" title="" /></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="header-bottom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="color-white pb-3">Audience Segmentation!</h4>
+                    <p class="color-white">Now that you have configured the customer eligibility criteria for your campaign, 
+                        <br/> you can add additional demographic filters on the eligible customer list from here.</p>					
+                </div>
+            </div>
+            <div class="row mt-3 pb-3">
+                <div class="col-sm-12 col-md-4">
+                    <div class="progress" style="height:5px">
+                        <div class="progress-bar" style="width:40%;height:10px"></div>
+                    </div>
+                    <p class="color-white"><small>60% Completed</small></p>
+                </div>
+                <div class="col-sm-12 col-md-8 text-right">
+                    <ul class="default-ul pull-right status-ul color-white li-iblock">
+                        <li>ALL FIELDS ARE MANDATORY</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="settings-area">
+        <div class="container">
+            <div class="settings-area">
+                <!-- <ul class="nav nav-pills nav-fill mb-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tab1">Platform Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab2">Brand Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab3">Channel Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab4">Data Layer Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab5">User Settings</a>
+                    </li>
+                </ul> -->
+                <div class="d-flex flex-row flex-wrap align-items-center py-2 mb-tabs">
+                    <div class="col-md-6 text-center text-md-left">  
+                        <label class="fs-18 fw-600 px-4 mb-0">AUDIENCE SEGMENTATION</label>
+                    </div>
+                    <div class="col-md-6">  
+                        <ul class="d-flex flex-row flex-wrap align-items-center pl-0 mb-0 justify-content-end text-center text-md-right">
+                            <li class="list-unstyled px-4 border-0 my-3 my-md-0"><a href="create-program.html" class="proxiSemibold backButton">Back</a></li>
+                            <li class="list-unstyled"><button type="button" class="text-capitalize btn btn-success btn-mb-success pl-5 pr-5 waves-effect waves-light">Check Count</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tab panes -->
+                <div class="tab-content mb-form-fields pt-3 mt-2">
+                    <div class="tab-pane active container" id="tab1">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5">
+                                        <div class="form-group md-form pending select-field">
+                                            <input type="text" id="form1" class="form-control open-input-modal">
+                                            <label for="form1" class="">Age</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group md-form pending select-field">
+                                            <input type="text" id="form2" class="form-control open-input-modal">
+                                            <label for="form2" class="">Vintage</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5">
+                                        <div class="form-group md-form pending help-area select-field">
+                                            <input type="text" id="form3" class="form-control open-input-modal">
+                                            <label for="form3" class="">Annual Income</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group md-form pending select-field">
+                                            <input type="text" id="form4" class="form-control open-input-modal">
+                                            <label for="form4" class="">Years at Current Residence</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5">
+                                        <div class="form-group md-form pending select-field">
+                                            <input type="text" id="form5" class="form-control open-input-modal">
+                                            <label for="form5" class="">Employee Status</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                            <div class="form-group md-form pending radio-section mt-1">
+                                                <p>VIP</p>
+                                                <div class="t-radio mb-3">
+                                                    <input type="radio" name="vipyesno" id="vipyes" checked>
+                                                    <label for="vipyes" class="mr-3">Yes</label>
+                                                    <input type="radio" id="vipno" name="vipyesno">
+                                                    <label for="vipno">No</label>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5">
+                                        <div class="form-group md-form pending radio-section">
+                                            <p>Ownership of Residence</p>
+                                            <div class="t-radio mb-3">
+                                                <input type="radio" name="residence" id="ownhouse" checked>
+                                                <label for="ownhouse" class="mr-3">Own House</label>
+                                                <input type="radio" id="residence" name="residence">
+                                                <label for="residence">Rental</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-5">
+                                    <div class="col-md-12 text-center">
+                                        <ul class="d-flex flex-row flex-wrap align-items-center pl-0 mb-0 justify-content-center text-center">
+                                            <li class="list-unstyled px-4 border-0 my-3 my-md-0"><a href="create-program.html" class="proxiSemibold backButton">Back</a></li>
+                                            <li class="list-unstyled"><button type="button" class="text-capitalize btn btn-success btn-mb-success pl-5 pr-5 waves-effect waves-light">Check Count</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/icheck.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+
+            $('#dtBasicExample').DataTable({
+                "dom": '<t><"td-footer"ilp>'
+            });
+            $('.dataTables_length').addClass('bs-select');
+
+            // Modal
+            $("input.open-input-modal").click(function() {
+                $("#centralModallg").modal('show');
+            });
+
+            // Slimscroll
+            $('.message-center').slimScroll({
+                position: "right",
+                size: "5px",
+                color: "#dcdcdc"
+            });
+
+            // Tooltip
+            $('[data-toggle="tooltip"]').tooltip({
+                html: true
+            });
+
+            // Search implementation
+            $(".search-box a, .search-box .app-search .srh-btn").on("click", function() {
+                $(".app-search").slideToggle(200);
+            });
+
+            // icheck
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_flat-purple',
+                radioClass: 'iradio_flat-purple'
+            });
+            jQuery('.paginate_button').click(function() {
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_flat-purple',
+                    radioClass: 'iradio_flat-purple'
+                });
+            });
+
+            //open popup
+            $('.createUser').click(function() {
+                $("#createUser").modal('show');
+            })
+
+        });
+    </script>
+
+    <!-- Central Modal Small -->
+    <div class="modal fade" id="centralModallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <!-- Change class .modal-sm to change the size of the modal -->
+
+            <div class="modal-content multi-select-modal">
+                <div class="modal-header py-3 px-4">
+                    <h4 class="modal-title w-100" id="myModalLabel">Products to be displayed</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-checkbox input-selected">
+                                <input type="checkbox">
+                                <label>Default checkbox 1</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-checkbox">
+                                <input type="checkbox">
+                                <label>Default checkbox 2</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-checkbox">
+                                <input type="checkbox">
+                                <label>Default checkbox 3</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio">
+                                <input type="radio" name="default">
+                                <label>Default Radio 1</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio">
+                                <input type="radio" name="default">
+                                <label>Default Radio 2</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio input-selected">
+                                <input type="radio" name="default">
+                                <label>Default Radio 3</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="custom-control mb-3 custom-radio">
+                                <input type="radio" name="default">
+                                <label>Default Radio 4</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-3 px-4">
+                    <button type="button" class="btn btn-success btn-mb-success pl-5 pr-5 text-capitalize">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Central Modal Small -->
+
+    <!-- Create User Form Start -->
+    <div class="modal fade" id="createUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <!-- Change class .modal-sm to change the size of the modal -->
+
+            <div class="modal-content multi-select-modal">
+                <div class="modal-header py-3 px-4">
+                    <h4 class="modal-title w-100" id="myModalLabel">Create User</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4 px-5">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="form-group md-form completed">
+                                <input type="text" id="userform1" class="form-control">
+                                <label for="userform1" class="">Username</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <input type="email" id="userform2" class="form-control">
+                                <label for="userform2" class="">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <input type="text" id="userform3" class="form-control">
+                                <label for="userform3" class="">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <input type="text" id="userform4" class="form-control">
+                                <label for="userform4" class="">Last Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <input type="text" id="userform5" class="form-control">
+                                <label for="userform5" class="">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5 radioButton">
+
+                            <label for="form6" class="">Status</label>
+
+                            <div class="d-flex flex-row flex-wrap form-group pending">
+                                <div class="custom-control custom-radio border-0 boxShadowNone pl-0">
+                                    <input type="radio" class="custom-control-input" id="active" name="activeInactive">
+                                    <label class="custom-control-label" for="active">Active</label>
+                                </div>
+
+                                <!-- Default checked -->
+                                <div class="custom-control custom-radio border-0 boxShadowNone">
+                                    <input type="radio" class="custom-control-input" id="inactive" name="activeInactive" checked>
+                                    <label class="custom-control-label" for="inactive">Inactive</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-md-5 radioButton">
+                            <label for="form6" class="">Seed User</label>
+
+                            <div class="d-flex flex-row flex-wrap form-group pending">
+                                <div class="custom-control custom-radio border-0 boxShadowNone pl-0">
+                                    <input type="radio" class="custom-control-input" id="seeduserYes" name="seedUser">
+                                    <label class="custom-control-label" for="seeduserYes">Yes</label>
+                                </div>
+
+                                <!-- Default checked -->
+                                <div class="custom-control custom-radio border-0 boxShadowNone">
+                                    <input type="radio" class="custom-control-input" id="seeduserNo" name="seedUser" checked>
+                                    <label class="custom-control-label" for="seeduserNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <!-- <input type="text" id="userform6" class="form-control">
+                                <label for="userform6" class="">Role</label> -->
+                                <select class="browser-default custom-select">
+                                    <option selected>Role</option>
+                                    <option value="1">Creator</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <select class="browser-default custom-select">
+                                    <option selected>Department</option>
+                                    <option value="1">Credit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group md-form pending">
+                                <input type="text" id="userform6" class="form-control">
+                                <label for="userform6" class="">Edit</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Create User Form End -->
+</body>
+
+</html>

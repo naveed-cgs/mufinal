@@ -1,0 +1,33 @@
+# ./docker-compose.yml
+
+version: '3'
+
+
+services:
+#  db:
+#    image: mysql:5.7
+#    environment:
+#      MYSQL_ROOT_PASSWORD: liferay1
+#      MYSQL_DATABASE: nippon_live
+#      MYSQL_USER: liferay
+#      MYSQL_PASSWORD: liferay
+#    ports:
+#      - "9906:3306"
+   web:
+     build: '.'
+     image: php:7.2.2-apache
+     container_name: testmu
+     environment:
+        - ALLOW_OVERRIDE=true
+#    build: './happytrigger'
+#    depends_on:
+#      - db
+   volumes:
+       - ./happytrigger:/home/cgsadmin/happytrigger
+       - .php.ini:/home/cgsadmin/myapp/php.ini
+       - .apache.conf:/home/cgsadmin/myapp/apache2.conf
+   ports:
+      - "8100:80"
+    stdin_open: true
+    tty: true
+
